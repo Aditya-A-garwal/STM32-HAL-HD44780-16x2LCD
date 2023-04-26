@@ -24,14 +24,21 @@ The steps to use the library in STM32CubeIDE along with your own project are sho
 
 1. Importing and building the library
     - Clone the repository and import it within STM32CubeIDE by navigating to *File>import>General>Projects from Folder or Archive* and selecting the repository. Note that the name of the project is different from the name of the repository. This should also import the examples.
+    ![import_project](https://user-images.githubusercontent.com/64585012/234631537-4d9dabba-e4ef-4035-b61d-d83c59b84f45.png)
     - Select the project in the *Project Explorer* and click the build button in the *toolbar* to build it. This should create an archive file called ```libHD44780_LCD.a```, which can be seen in the Archives drop-down under the *HD44780_LCD* Project.
 2. Using the library in your own projects
     - First, the include path of the project must be updated so that it can find the ```HD44780_LCD.h``` header file. Select the Project and open its *Properties*.
     - Navigate to *C/C++ Build>Settings* and then to *MCU GCC Compiler>Include Paths*. In the list of Include paths, add the ```Src/``` directory within the ```HD44780_LCD``` Project. This can be done as a relative path, absolute path or by using variables, according to the project's requirements. Apply and Close.
+    ![include_paths_initial](https://user-images.githubusercontent.com/64585012/234632279-422002bb-1528-4e8d-9386-8ac8f8343930.png)
+    ![include_paths_updated](https://user-images.githubusercontent.com/64585012/234632304-4be11e26-0464-43fc-bddd-a1368ec66982.png)
     - Next, the archive file must be added to the linker to allow it to be linked with the final binary. Once again, select the Project and open its *Properties*.
     - Navigate to *C/C++ Build>Settings* and then to *MCU GCC Linker>Libraries*. In the list of Libraries, add ```HD44780_LCD```. The linker automatically adds the ```lib``` prefix and ```.a``` extension.
+    ![library_path_initial](https://user-images.githubusercontent.com/64585012/234633508-cf012572-0cc0-477b-9b6b-99a2bdb59725.png)
+    ![library_path_updated1](https://user-images.githubusercontent.com/64585012/234633584-5d03ea73-cd79-4004-ada6-5ce7b9a6325f.png)
     - In the list of Library Search Paths, add the path to the ```Debug/``` directory of the ```HD44780_LCD``` Project. If the library is built with the *Release* Profile, add the ```Release/``` directory instead. Apply and Close.
+    ![library_path_updated2](https://user-images.githubusercontent.com/64585012/234633618-9ce574b0-c861-4402-96f5-bdc1c74cbf2b.png)
     - Finally, to automatically build the library while building the project, open the Project's *Properties* and navigate to *Project References*. Select the HD44780_LCD Project. Apply and Close.
+    ![library_dependancy](https://user-images.githubusercontent.com/64585012/234633329-5f2b034c-a368-47f1-9f7d-c81ede624b72.png)
     - Include the ```HD44780_LCD.h``` header file to enable intellisense and autocomplete by the IDE.
 
 The library allows flexibility in choosing pins to drive the display. For more information and examples on wiring the display to the LCD, navigate to the ```Examples/``` directory.
@@ -46,7 +53,7 @@ The list of structures provided by the library is shown below -
 
 |Name|Description|
 |-|-|
-|LCD_HD4480_t|Structure to encapsulate the GPIO Pins and state of a physical LCD display|
+|```LCD_HD4480_t```|Structure to encapsulate the GPIO Pins and state of a physical LCD display|
 
 ### Functions
 
