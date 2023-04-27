@@ -1,5 +1,10 @@
 # STM32-HAL-HD44780-16x2LCD
 
+![GitHub](https://img.shields.io/github/license/Aditya-A-garwal/STM32-HAL-HD44780-16x2LCD)
+![GitHub issues](https://img.shields.io/github/issues-raw/Aditya-A-garwal/STM32-HAL-HD44780-16x2LCD)
+![GitHub forks](https://img.shields.io/github/forks/Aditya-A-garwal/STM32-HAL-HD44780-16x2LCD)
+![GitHub Repo stars](https://img.shields.io/github/stars/Aditya-A-garwal/STM32-HAL-HD44780-16x2LCD)
+
 ## Overview
 This is an easy-to-use library for ARM based STM32 microcontrollers to drive 16x2 LCDs based on the HD44780 Controller. It allows the display to be controlled in the following modes -
 
