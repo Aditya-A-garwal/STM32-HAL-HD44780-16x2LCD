@@ -8,6 +8,8 @@ This README covers how to use the examples for the [STM32G071RB-NUCLEO](https://
 
 The LCD with its pins labelled is shown below -
 
+![lcd_diagram](https://user-images.githubusercontent.com/64585012/234818167-f4b92fce-8793-49f8-adec-1766d7f6bbbb.png)
+
 ### 4-bit Mode
 
 |LCD Pin|Nucleo Connector|GPIO Port|GPIO Pin|
