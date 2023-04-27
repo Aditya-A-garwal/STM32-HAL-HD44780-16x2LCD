@@ -14,7 +14,7 @@ This README aims to explain the APIs provided by the library along with how to u
 
 ## Examples
 
-Examples have also been provided with the library to demonstrate its usage. Navigate to the ```Examples/``` directory for more information. As of now, the libraries have only been tested with the [NUCLEO-STM32G071RB](https://www.st.com/en/evaluation-tools/nucleo-g071rb.html) Board, which is based on ARM Cortex M0+ design.
+Examples have also been provided with the library to demonstrate its usage. Navigate to the ```Examples/``` directory for more information. As of now, the libraries have only been tested with the [STM32G071RB-NUCLEO](https://www.st.com/en/evaluation-tools/nucleo-g071rb.html) Board, which is based on ARM Cortex M0+ design.
 
 ## Usage
 
@@ -53,7 +53,7 @@ The list of structures provided by the library is shown below -
 
 |Name|Description|
 |-|-|
-|```LCD_HD4480_t```|Structure to encapsulate the GPIO Pins and state of a physical LCD display|
+|```LCD_HD44780_t```|Structure to encapsulate the GPIO Pins and state of a physical LCD display|
 
 ### Functions
 
